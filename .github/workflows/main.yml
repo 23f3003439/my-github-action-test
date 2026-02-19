@@ -1,0 +1,45 @@
+name: My First Action
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 23f3003439@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+```
+
+**What does this mean?**
+- `on: push` → Run this action whenever you push code to the `main` branch
+- `on: workflow_dispatch` → Also lets you trigger it manually with a button
+- `runs-on: ubuntu-latest` → Use a Linux computer (GitHub provides this for free)
+- `name: 23f3003439@ds.study.iitm.ac.in` → This is the step name containing your email (required by the assignment)
+- `run: echo "Hello, world!"` → The actual command the robot runs
+
+---
+
+### Step 5: Save (Commit) the File
+
+1. Click the green **"Commit changes..."** button in the top right
+2. A popup appears — just click **"Commit changes"** again to confirm
+3. This saves the file AND automatically triggers the action (because you just pushed to `main`!)
+
+---
+
+### Step 6: Watch It Run
+
+1. Click the **"Actions"** tab again
+2. You should see a workflow run appearing (possibly with an orange spinning circle = running, or green checkmark = done)
+3. Click on it to see the details and confirm your email step appears
+
+---
+
+### Step 7: Submit Your Repository URL
+
+Your URL will look like:
+```
+https://github.com/YOUR_USERNAME/YOUR_REPO_NAME
